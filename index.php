@@ -8,7 +8,7 @@
         <div class="owl-carousel">
             <div class="carousel-item">
                 <div class="carousel-img">
-                    <img src="img/images/trust.png" alt="Image">
+                    <img src="img/images/s1.png" alt="Image">
                 </div>
                 <div class="carousel-text">
                     <h1>Let's be kind for children</h1>
@@ -25,7 +25,7 @@
             </div>
             <div class="carousel-item">
                 <div class="carousel-img">
-                    <img src="img/images/31.png" alt="Image">
+                    <img src="img/images/s2.png" alt="Image">
                 </div>
                 <div class="carousel-text">
                     <h1>Get Involved with helping hand</h1>
@@ -42,7 +42,7 @@
             </div>
             <div class="carousel-item">
                 <div class="carousel-img">
-                    <img src="img/carousel-3.jpg" alt="Image">
+                    <img src="img/images/s3.png" alt="Image">
                 </div>
                 <div class="carousel-text">
                     <h1>Bringing smiles to millions</h1>
@@ -457,7 +457,7 @@
             </div>
             <div class="col-12 col-md-4">
                 <div class="card">
-                    <img src="img/images/childrencare.png" class="card-img-top p-2" alt="..." style="border-radius:10px;">
+                    <img src="img/images/8.png" class="card-img-top p-2" alt="..." style="border-radius:10px;">
                     <div class="card-body">
 
                         <p class="text-center">
