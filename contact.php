@@ -25,11 +25,11 @@
         <div class="contact">
             <div class="container">
                 <div class="section-header text-center">
-                    <p>Get In Touch</p>
-                    <h2>Contact for any query</h2>
+                    <!-- <p>Get In Touch</p> -->
+                    <h2>Contact Us</h2>
                 </div>
                 <div class="contact-img">
-                    <img src="img/contact.jpg" alt="Image">
+                    <img src="img/contact.png" alt="Image">
                 </div>
                 <div class="contact-form">
                         <div id="success"></div>

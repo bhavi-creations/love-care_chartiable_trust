@@ -841,7 +841,7 @@
             <h2>Contact Us</h2>
         </div>
         <div class="contact-img">
-            <img src="img/contact.jpg" alt="Image">
+            <img src="img/contact.png   " alt="Image">
         </div>
         <div class="contact-form">
             <div id="success"></div>
