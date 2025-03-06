@@ -8,7 +8,7 @@
         <div class="owl-carousel">
             <div class="carousel-item">
                 <div class="carousel-img">
-                    <img src="img/carousel-1.jpg" alt="Image">
+                    <img src="img/images/trust.png" alt="Image">
                 </div>
                 <div class="carousel-text">
                     <h1>Let's be kind for children</h1>
@@ -25,7 +25,7 @@
             </div>
             <div class="carousel-item">
                 <div class="carousel-img">
-                    <img src="img/carousel-2.jpg" alt="Image">
+                    <img src="img/images/31.png" alt="Image">
                 </div>
                 <div class="carousel-text">
                     <h1>Get Involved with helping hand</h1>
@@ -88,7 +88,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <div class="about-img d-none d-md-block" data-parallax="scroll" data-image-src="img/about.jpg"></div>
+                <div class="about-img d-none d-md-block" data-parallax="scroll" data-image-src="img/about.png"></div>
             </div>
             <div class="col-lg-6">
                 <div class="section-header">
@@ -164,7 +164,7 @@
 
 
 <!-- Service Start -->
-<div class="service">
+ <div class="service">
     <div class="container">
         <div class="section-header text-center">
             <p>What We Do?</p>
@@ -239,7 +239,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> 
 <!-- Service End -->
 
 
@@ -415,9 +415,9 @@
 
 
 <!-- service  -->
-<section>
+ <section class="social_content">
 
-    <div class="container my-5">
+    <div class="container ">
         <div class="text-center service_content">
             <h4>Our Services</h4>
             <h1> Social Activities </h1>
@@ -438,7 +438,7 @@
                     <img src="img/images/education.png" class="card-img-top p-2" alt="..." style="border-radius:10px;">
                     <div class="card-body">
 
-                        <!-- <p class="stretched-link text-center"> Education To Children</p> -->
+                     
                          <p class="text-center">
                             <a href="education_children.php" class="stretched-link">Education To Children</a>
                          </p>
@@ -493,7 +493,7 @@
 
         </div>
     </div>
-</section>
+</section> 
 
 
 
@@ -633,12 +633,12 @@
 
 
 <!-- Team Start -->
-<div class="team">
+ <div class="team ">
     <div class="container">
         <div class="section-header text-center">
             <p>Meet Our Team</p>
             <h2>Meet Our Team</h2>
-            <!-- <h2>Awesome guys behind our charity activities</h2> -->
+          
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6">

@@ -23,7 +23,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <div class="about-img d-none d-md-block" data-parallax="scroll" data-image-src="img/about.jpg"></div>
+                <div class="about-img d-none d-md-block" data-parallax="scroll" data-image-src="img/about.png"></div>
             </div>
             <div class="col-lg-6">
                 <div class="section-header">

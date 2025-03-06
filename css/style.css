@@ -54,9 +54,9 @@ a:focus {
     box-shadow: none;
 }
 
-.container-fluid {
+/* .container-fluid {
     max-width: 1366px;
-}
+} */
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
@@ -661,6 +661,7 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 45px 0;
+
 }
 
 .about .section-header {
@@ -1059,8 +1060,10 @@ a:focus {
 .team {
     position: relative;
     width: 100%;
-    padding: 45px 0 15px 0;
+    /* padding: 45px 0 15px 0; */
+    margin-bottom: 50px;
 }
+
 
 .team .team-item {
     position: relative;
@@ -1133,6 +1136,9 @@ a:focus {
     height: 160px;
 }
 
+.team-item{
+    margin: 20px;
+}
 
 /*******************************/
 /******* Testimonial CSS *******/
@@ -2223,4 +2229,9 @@ iframe {
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+.social_content{
+    padding: 30px;
+    margin-bottom: 100px;
 }

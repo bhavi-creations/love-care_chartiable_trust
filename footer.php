@@ -19,7 +19,7 @@
                     <p><i class="fa fa-map-marker-alt"></i> D.NO : 4-37,church veedhi,K.GANGAVARAM MANDALAM,kunduru,DR.B.R.Ambedkar konaseema distict ,pin-533262</p>
                     <p><i class="fa fa-envelope"></i>pdpaulpalivela@gmail.com</p>
                     <p><i class="fa fa-phone-alt"></i>+91-7660072143</p>
-                 
+
                     <!-- <div class="footer-social">
                         <a class="btn btn-custom" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-custom" href=""><i class="fab fa-facebook-f"></i></a>
@@ -34,21 +34,20 @@
                     <h2>Popular Links</h2>
                     <a href="index.php">Home</a>
                     <a href="about.php">About Us</a>
-                    <a href="contact.php">Contact Us</a>
                     <a href="service.php">service</a>
                     <a href="gallery.php">Gallery</a>
-
+                    <a href="contact.php">Contact Us</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="footer-link">
                     <h2>Useful Links</h2>
-                    <a href="help_disable_childer.php" >Help to Disable Children</a>
-                            <a href="education_children.php" >Education Children</a>
-                            <a href="help_to_cyclone.php" >Help To Cyclone & Fire victims  </a>
-                            <a href="children_care.php" >Children Care</a>
-                            <a href="help_to_lepers.php" >Help to lepers</a>
-                            <a href="water_sanititation.php" >Water sanitation</a>
+                    <a href="help_disable_childer.php">Help to Disable Children</a>
+                    <a href="education_children.php">Education Children</a>
+                    <a href="help_to_cyclone.php">Help To Cyclone & Fire victims </a>
+                    <a href="children_care.php">Children Care</a>
+                    <a href="help_to_lepers.php">Help to lepers</a>
+                    <a href="water_sanititation.php">Water sanitation</a>
                 </div>
             </div>
 
