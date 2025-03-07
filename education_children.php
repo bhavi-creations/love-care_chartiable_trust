@@ -18,7 +18,7 @@
     <div class="container my-5">
         <div class="row">
             <h1 class="text-center my-5 bold">Education to Children</h1>
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <p>
                     Education is a powerful tool that helps break the cycle of poverty, giving children the opportunity to build a better future. Many underprivileged children are deprived of basic education due to financial struggles, lack of resources, and social barriers. Without access to quality education, they remain trapped in hardships, unable to realize their full potential.
 
@@ -30,7 +30,7 @@
                 <!-- <p>
                     Our charitable trust is committed to ensuring that every child, regardless of their background, has access to quality education. Through scholarships, school supplies, and educational programs, we strive to create an environment where children can learn, grow, and succeed. With your support, we can make education a reality for those who need it the most.</p> -->
             </div>
-            <div class="col-6 " class="serive_images">
+            <div class="col-md-6 col-12 " class="serive_images">
                 <img src="img/images/education.png" alt="" class="img-fluid">
 
             </div>

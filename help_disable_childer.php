@@ -19,7 +19,7 @@
     <div class="container my-5">
         <div class="row">
             <h1 class="text-center my-5 bold">Help to Disable Children</h1>
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <p>
                     Every child deserves love, care, and equal opportunities, including children with disabilities. Our charitable trust is dedicated to providing them with essential support, including healthcare, education, and rehabilitation, to help them lead fulfilling lives.
 
@@ -34,7 +34,7 @@
 
                 </p>
             </div>
-            <div class="col-6    "  class="serive_images">
+            <div class="col-md-6 col-12    "  class="serive_images">
                 <img src="img/images/disable_children.png" alt="" class="img-fluid">
 
             </div>

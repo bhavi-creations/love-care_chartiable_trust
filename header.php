@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
 ">
 
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
-"> -->
+    
     <!-- CSS Libraries -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -30,7 +31,7 @@
    
 
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -69,38 +70,52 @@
     <!-- Top Bar End -->
 
     <!-- Nav Bar Start -->
-    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
-            <a href="index.php" class="navbar-brand">
-            <img src="img/images/header_logo.png" alt="" class="img-fluid" style="width: 300px; height: 300px;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a href="index.php"  >
+        <img src="img/images/header.png" alt="Logo" class="img-fluid logo_image  " >
+        
+
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-start" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.php" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.php" class="nav-link">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <!-- Clicking the link redirects to service.php, while hover shows the dropdown -->
+            <a href="service.php" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Service
             </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="index.php" class="nav-item nav-link active">Home</a>
-                    <a href="about.php" class="nav-item nav-link">About</a>
-                    <div class="nav-item dropdown">
-                        <a href="service.php" class="nav-link dropdown-toggle" data-toggle="dropdown">service</a>
-                        <div class="dropdown-menu">
-                            <a href="help_disable_childer.php" class="dropdown-item">Help to Disable Children</a>
-                            <a href="education_children.php" class="dropdown-item">Education Children</a>
-                            <a href="help_to_cyclone.php" class="dropdown-item">Help To Cyclone & Fire victims  </a>
-                            <a href="children_care.php" class="dropdown-item">Children Care</a>
-                            <a href="help_to_lepers.php" class="dropdown-item">Help to lepers</a>
-                            <a href="water_sanititation.php" class="dropdown-item">Water sanitation</a>
-                        </div>
-                    </div>
-                    <a href="gallery.php" class="nav-item nav-link">Gallery</a>
-                    
-                    <a href="registration.php" class="nav-item nav-link">Registration</a>
-                    <a href="contact.php" class="nav-item nav-link">Contact</a>
-                    <a href="donation.php" class="nav-item nav-link btn donation_button">Donation</a>
-
-                   
-                </div>
-            </div>
-        </div>
+            <ul class="dropdown-menu">
+              <li><a href="help_disable_childer.php" class="dropdown-item">Help to Disable Children</a></li>
+              <li><a href="education_children.php" class="dropdown-item">Education Children</a></li>
+              <li><a href="help_to_cyclone.php" class="dropdown-item">Help To Cyclone & Fire Victims</a></li>
+              <li><a href="children_care.php" class="dropdown-item">Children Care</a></li>
+              <li><a href="help_to_lepers.php" class="dropdown-item">Help to Lepers</a></li>
+              <li><a href="water_sanititation.php" class="dropdown-item">Water Sanitation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="gallery.php" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="registration.php" class="nav-link">Registration</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.php" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="donation.php" class="nav-link">Donation</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>

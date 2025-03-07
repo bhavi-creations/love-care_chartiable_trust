@@ -7,7 +7,10 @@ body {
     background: #ffffff;
     font-family: 'Quicksand', sans-serif;
 }
-
+a{
+    text-decoration: none !important;
+    /* list-style: none !important; */
+}
 h1,
 h2, 
 h3, 
@@ -268,16 +271,74 @@ a:focus {
     transition: .5s;
 }
 
-.navbar .navbar-brand {
-    margin: 0;
-    color: #ffffff;
-    /* font-size: 45px; */
-    line-height: 0px;
-    font-weight: 700;
-    letter-spacing: 5px;
-    text-transform: uppercase;
+ 
+
+
+
+@media (min-width:1200px ) {
+    .logo_image{
+    
+        width: 500px !important;
+        height: 100px !important;
+        max-height:100px !important;
+    
+    }
+    
+}
+@media  (min-width:1100px ) and (max-width:1200px ) {
+    .logo_image{
+    
+        width: 500px !important;
+        height: 100px !important;
+        max-height:70px !important;
+    
+    }
+    
+}
+@media  (min-width:992px ) and (max-width:1100px ) {
+    .logo_image{
+    
+        width: 500px !important;
+        height: 100px !important;
+        max-height:50px !important;
+    
+    }
+    
 }
 
+@media  (min-width:768 ) and (max-width:992px ) {
+    .logo_image{
+    
+        width: 500px !important;
+        height: 100px !important;
+        max-height:30px !important;
+    
+    }
+    
+}
+
+
+@media (min-width:425px ) and   (max-width:768px ) {
+    .logo_image{
+    
+        width: 300px !important;
+        height: 100px !important;
+        max-height:510px !important;
+    
+    }
+    
+}
+
+@media  (max-width:425px ) {
+    .logo_image{
+    
+        width: 250px !important;
+        height: 100px !important;
+        max-height:5100px !important;
+    
+    }
+    
+}
 .navbar .navbar-brand img {
     max-width: 100%;
     max-height: 40px;
@@ -335,7 +396,9 @@ a:focus {
 @media (max-width: 991.98px) {   
     .navbar {
         padding: 15px;
-        background: #20212B !important;
+        background: #8cc3e5
+
+        !important;
     }
     
     .navbar a.nav-link {

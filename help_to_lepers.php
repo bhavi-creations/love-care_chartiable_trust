@@ -19,7 +19,7 @@
     <div class="container my-5">
         <div class="row">
             <h1 class="text-center my-5 bold">Help To Lepers</h1>
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <p>
                     Leprosy is a curable disease, yet thousands of people suffer due to lack of awareness, medical facilities, and timely intervention. Many leprosy patients face severe health complications, including nerve damage and disabilities, if left untreated. Access to early diagnosis and proper medication can prevent long-term suffering and improve their quality of life.
 
@@ -29,7 +29,7 @@
                 </p>
 
             </div>
-            <div class="col-6" class="serive_images">
+            <div class="col-md-6 col-12" class="serive_images">
                 <img src="img/images/lepers.png" alt="" class="img-fluid">
 
             </div>

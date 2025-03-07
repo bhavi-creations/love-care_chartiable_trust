@@ -22,7 +22,7 @@
     <div class="container my-5">
         <div class="row">
             <h1 class="text-center my-5 bold">Children Care</h1>
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <p>
                     Every child deserves a safe and healthy environment where they can grow, learn, and thrive. Unfortunately, millions of children worldwide suffer from malnutrition, lack of medical care, and unsafe living conditions. Without proper support, their physical and mental well-being is at risk, affecting their future opportunities.
 
@@ -34,7 +34,7 @@
                 </p>
 
             </div>
-            <div class="col-6 " class="serive_images">
+            <div class="col-md-6 col-12 " class="serive_images">
                 <img src="img/images/8.png" alt="" class="img-fluid">
 
             </div>

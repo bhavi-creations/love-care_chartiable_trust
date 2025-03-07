@@ -18,7 +18,7 @@
     <div class="container my-5">
         <div class="row">
             <h1 class="text-center my-5 bold">Help To Cyclone & Fire victims</h1>
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <p>
                     Natural disasters like cyclones and fires leave behind destruction, displacing families and depriving them of basic necessities. In the aftermath of such tragedies, immediate relief is crucial to ensure the safety and well-being of affected communities. Many victims lose their homes, belongings, and access to food and clean water, making swift action essential.
                 </p>
@@ -28,7 +28,7 @@
                 </p>
 
             </div>
-            <div class="col-6 " class="serive_images">
+            <div class="col-md-6 col-12 " class="serive_images">
                 <img src="img/images/7.png" alt="" class="img-fluid">
 
             </div>
