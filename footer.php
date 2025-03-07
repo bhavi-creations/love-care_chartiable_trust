@@ -3,6 +3,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6">
+
+
+            <img src="img/images/footer_logo.png" alt="" class="img-fluid">
                 <!-- <div class="footer-newsletter">
                         <h2>Newsletter</h2>
                         <form>
@@ -11,13 +14,13 @@
                             <label>Don't worry, we don't spam!</label>
                         </form>
                     </div> -->
-                <h1 class="footer_content">LOVE AND CARE CHARITABLE TRUST</h1>
+                <!-- <h1 class="footer_content">LOVE AND CARE CHARITABLE TRUST</h1> -->
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="footer-contact">
                     <h2>Our Head Office</h2>
-                    <p><i class="fa fa-map-marker-alt"></i> D.NO : 4-37,church veedhi,K.GANGAVARAM MANDALAM,kunduru,DR.B.R.Ambedkar konaseema distict ,pin-533262</p>
-                    <p><i class="fa fa-envelope"></i>: loveandcarecharitabletrusty@gmail.com</p>
+                    <p><i class="fa fa-map-marker-alt"></i> D.NO : 4-37,church street,K.GANGAVARAM MANDALAM,kunduru,DR.B.R.Ambedkar konaseema distict ,pin-533262</p>
+                    <p><i class="fa fa-envelope"></i>loveandcarecharitabletrusty@gmail.com</p>
                     <p><i class="fa fa-phone-alt"></i>+91-7660072143 , 9577118999</p>
 
                     <!-- <div class="footer-social">

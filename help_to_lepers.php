@@ -30,7 +30,7 @@
 
             </div>
             <div class="col-6" class="serive_images">
-                <img src="img/images/disable_children.png" alt="" class="img-fluid">
+                <img src="img/images/lepers.png" alt="" class="img-fluid">
 
             </div>
         </div>

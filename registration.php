@@ -15,29 +15,30 @@
 
 <section>
     <div class="container">
+       
         <div class="row">
-            <div class="col-md-4 col-12 my-3">
+            <div class="col-md-4 col-6 my-3">
                 <!-- <a href="img/documents/Trust_original_documents_2.pdf" download="Trust_original_documents_2.pdf"> -->
-                 <a>   <embed src="img/documents/Trust_original_documents.pdf" type="application/pdf" width="100%" height="600px">
+                 <a>   <embed src="img/documents/Trust_original_documents.pdf" type="application/pdf" download="Trust_original_documents_2.pdf" width="100%" height="600px">
                 </a>
             </div>
 
 
-            <div class="col-md-4 col-12 my-3">
-                <embed src="img/documents/Trust_original_documents_1.pdf" type="application/pdf" width="100%" height="600px">
-
+            <div class="col-md-4 col-6 my-3">
+              <a>  <embed src="img/documents/Trust_original_documents_1.pdf" type="application/pdf"  download="Trust_original_documents_2.pdf" width="100%" height="600px">
+              </a>
             </div>
-            <div class="col-md-4 col-12 my-3">
-                <embed src="img/documents/Trust_original_documents_2.pdf" type="application/pdf" width="100%" height="600px">
-
+            <div class="col-md-4 col-6 my-3">
+            <a><embed src="img/documents/Trust_original_documents_2.pdf" type="application/pdf" download="Trust_original_documents_2.pdf" width="100%" height="600px">
+            </a>
             </div>
-            <div class="col-md-4 col-12 my-3">
-                <embed src="img/documents/Trust_original_documents_3.pdf" type="application/pdf" width="100%" height="600px">
-
+            <div class="col-md-4 col-6 my-3">
+            <a><embed src="img/documents/Trust_original_documents_3.pdf" type="application/pdf" download="Trust_original_documents_2.pdf" width="100%" height="600px">
+            </a>
             </div>
-            <div class="col-md-4 col-12 my-3">
-                <embed src="img/documents/Trust_original_documents_4.pdf" type="application/pdf" width="100%" height="600px">
-
+            <div class="col-md-4 col-6 my-3">
+            <a> <embed src="img/documents/Trust_original_documents_4.pdf" type="application/pdf" download="Trust_original_documents_2.pdf" width="100%" height="600px">
+            </a>
             </div>
         </div>
     </div>

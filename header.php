@@ -28,6 +28,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
    
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -68,7 +72,7 @@
     <div class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
             <a href="index.php" class="navbar-brand">
-                <P>LOVE AND CARE</P>
+            <img src="img/images/header_logo.png" alt="" class="img-fluid" style="width: 300px; height: 300px;">
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -90,9 +94,10 @@
                         </div>
                     </div>
                     <a href="gallery.php" class="nav-item nav-link">Gallery</a>
-                    <a href="donation.php" class="nav-item nav-link">Donation</a>
+                    
                     <a href="registration.php" class="nav-item nav-link">Registration</a>
                     <a href="contact.php" class="nav-item nav-link">Contact</a>
+                    <a href="donation.php" class="nav-item nav-link btn donation_button">Donation</a>
 
                    
                 </div>

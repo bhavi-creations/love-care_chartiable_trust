@@ -638,7 +638,7 @@
 <div class="team ">
     <div class="container">
         <div class="section-header text-center">
-            <p>Meet Our Team</p>
+            <!-- <p>Meet Our Team</p> -->
             <h2>Meet Our Team</h2>
 
         </div>
@@ -646,10 +646,10 @@
             <div class="col-lg-4 col-md-6">
                 <div class="team-item">
                     <div class="team-img">
-                        <img src="img/team-1.jpg" alt="Team Image">
+                        <img src="img/images/Chairman.png" alt="Team Image">
                     </div>
                     <div class="team-text">
-                        <h2>Palivela Devid Paul</h2>
+                        <h2>Palivela David Paul</h2>
                         <p>Chairman </p>
                         <!-- <div class="team-social">
                             <a href=""><i class="fab fa-twitter"></i></a>
@@ -663,7 +663,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="team-item">
                     <div class="team-img">
-                        <img src="img/team-2.jpg" alt="Team Image">
+                        <img src="img/images/vicechairman.png" alt="Team Image">
                     </div>
                     <div class="team-text">
                         <h2>Palivela George Paul</h2>
@@ -680,7 +680,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="team-item">
                     <div class="team-img">
-                        <img src="img/team-3.jpg" alt="Team Image">
+                        <img src="img/images/Treasurer.png" alt="Team Image">
                     </div>
                     <div class="team-text">
                         <h2>Palivela Baby</h2>

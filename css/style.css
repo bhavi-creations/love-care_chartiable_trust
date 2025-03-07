@@ -15,6 +15,14 @@ h4,
 h5, 
 h6 {
     color: #4a4c70;
+   
+    font-weight: 800;
+    font-family:"poppins",'Gill Sans';
+}
+p{
+    font-family:"poppins",'Gill Sans';
+    font-weight: 400;
+
 }
 
 a {
@@ -25,7 +33,9 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #FDBE33;
+    color: #064292
+
+    ;
     outline: none;
     text-decoration: none;
 }
@@ -37,8 +47,12 @@ a:focus {
     font-weight: 500;
     color: #777777;
     border-radius: 0;
-    border: 2px solid #FDBE33;
-    box-shadow: inset 0 0 0 0 #FDBE33;
+    border: 2px solid #954973
+
+    ;
+    box-shadow: inset 0 0 0 0 #954973
+
+    ;
     transition: ease-out 0.3s;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
@@ -46,7 +60,9 @@ a:focus {
 
 .btn.btn-custom:hover {
     color: #20212B;
-    box-shadow: inset 0 0 0 30px #FDBE33;
+    box-shadow: inset 0 0 0 30px #954973
+
+    ;
 }
 
 .btn:focus,
@@ -118,7 +134,7 @@ a:focus {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #FDBE33;
+    background: #1178bf    ;
     width: 44px;
     height: 44px;
     text-align: center;
@@ -186,7 +202,9 @@ a:focus {
 
 .top-bar .text i {
     font-size: 16px;
-    color: #FDBE33;
+    color: #df142b
+
+    ;
     margin-right: 5px;
 }
 
@@ -221,7 +239,9 @@ a:focus {
 
 .top-bar .social a:hover {
     color: #ffffff;
-    background: #FDBE33;
+    background:#064292
+
+    ;
 }
 
 @media (min-width: 992px) {
@@ -273,7 +293,7 @@ a:focus {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #FDBE33;
+    color: #139ced  ;
     transition: none;
 }
 
@@ -436,7 +456,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FDBE33;
+    color: #c82844    ;
     background: rgba(256, 256, 256, .2);
     font-size: 22px;
     transition: .3s;
@@ -445,7 +465,9 @@ a:focus {
 .carousel .owl-nav .owl-prev:hover,
 .carousel .owl-nav .owl-next:hover {
     color: #ffffff;
-    background: #FDBE33;
+    background:#1178bf
+
+    ;
 }
 
 .carousel .owl-nav .owl-prev {
@@ -540,7 +562,7 @@ a:focus {
 
 .page-header h2 {
     position: relative;
-    color: #FDBE33;
+    color:#0076bf    ;
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -554,7 +576,7 @@ a:focus {
     height: 2px;
     left: calc(50% - 50px);
     bottom: 0;
-    background: #FDBE33;
+    background: #f90313;
 }
 
 .page-header a {
@@ -628,7 +650,7 @@ a:focus {
     font-size: 22px;
     font-weight: 600;
     text-transform: capitalize;
-    color: #FDBE33;
+    color: #d81e35;
 }
 
 .section-header h2 {
@@ -691,9 +713,13 @@ a:focus {
 
 .about .about-tab .nav.nav-pills .nav-link:hover,
 .about .about-tab .nav.nav-pills .nav-link.active {
-    color: #FDBE33;
+    color: #56a4d4
+
+    ;
     padding-bottom: 7px;
-    border-bottom: 3px solid #FDBE33;
+    border-bottom: 3px solid #85c1e5
+
+    ;
 }
 
 .about .about-tab .tab-content {
@@ -738,7 +764,7 @@ a:focus {
 .service .service-icon i {
     position: relative;
     display: block;
-    color: #FDBE33;
+    color: #1178bf    ;
     font-size: 60px;
     line-height: 60px;
     margin-top: 5px;
@@ -767,7 +793,8 @@ a:focus {
     height: 40px;
     top: calc(50% - 20px);
     left: -1px;
-    background: #FDBE33;
+    background:#83537a ;
+   
 }
 
 .service .service-text h3 {
@@ -819,7 +846,9 @@ a:focus {
 
 .donate .donate-form {
     padding: 90px 30px;
-    background: #FDBE33;
+    background:#85c1e5
+
+    ;
 }
 
 .donate .donate-form .control-group {
@@ -1014,7 +1043,7 @@ a:focus {
     margin-top: 10px;
     font-size: 60px;
     line-height: 60px;
-    color: #FDBE33;
+    color: #93caea;
 }
 
 .facts .facts-text {
@@ -1209,7 +1238,9 @@ a:focus {
     width: 12px;
     height: 12px;
     border-radius: 0;
-    background: #FDBE33;
+    background: #1178bf
+
+    ;
 }
 
 .testimonial .owl-dot.active {
@@ -1254,7 +1285,9 @@ a:focus {
 
 .volunteer .volunteer-form {
     padding: 90px 30px;
-    background: #FDBE33;
+    background: #1178bf
+
+    ;
 }
 
 .volunteer .volunteer-form .control-group {
@@ -2034,7 +2067,12 @@ a:focus {
     position: relative;
     /* margin-top: 45px; */
     padding-top: 90px;
-    background: #20212B;
+    /* background: #20212B; */
+    background: linear-gradient(to right,
+
+#85c1e5
+,#56a4d4
+,#85c1e5);
 }
 
 .footer .footer-contact,
@@ -2051,7 +2089,9 @@ a:focus {
     margin-bottom: 30px;
     font-size: 22px;
     font-weight: 700;
-    color: #FDBE33;
+    color: #d81e35
+
+    ;
 }
 
 .footer .footer-link a {
@@ -2244,3 +2284,91 @@ iframe {
 	margin-bottom: 35px;
 	padding: 0px 80px;
 }
+
+
+.donate_button{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.donate_button{
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.donate_button:hover {
+    background: #0056b3;
+  }
+
+
+
+/* donation  */
+.donate_image{
+background-color: #f4f4f4;
+    }
+.donae_content {
+    max-width: 600px;
+    /* margin: 50px auto; */
+    /* background: #fff; */
+    background: url("img/images/charity.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    margin-top: -20px;
+  }
+  h2 {
+    text-align: center;
+  }
+  label {
+    display: block;
+    margin-top: 5px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  .button-group {
+    margin-top: 20px;
+    text-align: center;
+  }
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  button:hover {
+    background: #0056b3;
+  }
+
+
+  /* card  */
+  .bank-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .bank-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    border-color: #007bff;
+    background-color: #f0f8ff;
+  }
+  .card-header, .card-body {
+    background: transparent;
+  }

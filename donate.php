@@ -117,9 +117,18 @@
                                 <h2>Let's donate to needy people for better lives</h2>
                             </div>
                             <div class="donate-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non. Aliquam metus tortor, auctor id gravida, viverra quis sem. Curabitur non nisl nec nisi maximus. Aenean convallis porttitor. Aliquam interdum at lacus non blandit.
-                                </p>
+                            <p>
+                        Your donation transforms lives. When you contribute to our charitable trust, you're directly supporting programs that provide education, healthcare, and essential community services. Every gift—whether it's a one-time contribution or a recurring donation—helps us address pressing challenges and build a better future. </p>
+                    <p>
+                        We ensure your support is managed with complete transparency and accountability. Detailed reports and regular updates show exactly how your donation is making an impact, while our secure process protects your personal and financial information. In addition, your generosity may also offer tax benefits, further enhancing the value of your contribution. </p>
+
+                    <p>
+                        When you choose to donate, you're supporting initiatives that provide education, healthcare, and essential services to those in need. Every contribution, regardless of size, plays a vital role in building a stronger, more resilient community.
+                    </p>
+
+                    <p>
+                        By donating, you become part of a movement dedicated to empowering individuals and uplifting entire communities. Your support helps create opportunities, fuels innovation, and drives sustainable change.
+                    </p>
                             </div>
                         </div>
                     </div>
