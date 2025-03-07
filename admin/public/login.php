@@ -39,7 +39,7 @@
                         <div class="row">
                             <div class="col-lg-6 d-none d-lg-block  ">
 
-                            <img src="img/images/footer_logo.png" alt="" class="img-fluid">
+                            <img src="img/footer_logo.png" alt="" class="img-fluid">
                                 <!-- <img src="../img/images/footer_log12.png" alt="login image" class="img-fluid"> -->
                                  <!-- <img src="img/images/footer_logo.png" alt="logo" class="img-fluid"> -->
                             </div>
