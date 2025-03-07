@@ -7,9 +7,9 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
     $password = "";
     $dbname = "charitable_trust";
 } else {
-    $username = "bhavicreations";
-    $password = "d8Az75YlgmyBnVM";
-    $dbname = "loveandcare";
+    $username = "loveandcaretrust";
+    $password = "9cePPd3BiojDl4d";
+    $dbname = "loveandcaretrust";
 }
 
 // Create connection
