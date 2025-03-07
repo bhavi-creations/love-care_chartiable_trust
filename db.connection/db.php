@@ -6,9 +6,9 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
     $pass = "";
     $db = "charitable_trust";
 } else {
-    $user = "bhavicreations";
-    $pass = "d8Az75YlgmyBnVM";
-    $db = "loveandcare";
+    $user = "loveandcaretrust";
+    $pass = "9cePPd3BiojDl4d";
+    $db = "loveandcaretrust";
 }
 
 
