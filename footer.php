@@ -17,8 +17,8 @@
                 <div class="footer-contact">
                     <h2>Our Head Office</h2>
                     <p><i class="fa fa-map-marker-alt"></i> D.NO : 4-37,church veedhi,K.GANGAVARAM MANDALAM,kunduru,DR.B.R.Ambedkar konaseema distict ,pin-533262</p>
-                    <p><i class="fa fa-envelope"></i>pdpaulpalivela@gmail.com</p>
-                    <p><i class="fa fa-phone-alt"></i>+91-7660072143</p>
+                    <p><i class="fa fa-envelope"></i>: loveandcarecharitabletrusty@gmail.com</p>
+                    <p><i class="fa fa-phone-alt"></i>+91-7660072143 , 9577118999</p>
 
                     <!-- <div class="footer-social">
                         <a class="btn btn-custom" href=""><i class="fab fa-twitter"></i></a>
@@ -36,6 +36,8 @@
                     <a href="about.php">About Us</a>
                     <a href="service.php">service</a>
                     <a href="gallery.php">Gallery</a>
+                    <a href="donation.php">Donation</a>
+                    <a href="registration.php" >Registration</a>
                     <a href="contact.php">Contact Us</a>
                 </div>
             </div>

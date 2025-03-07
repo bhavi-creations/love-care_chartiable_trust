@@ -107,7 +107,7 @@
                             <i class="flaticon-home"></i>
                             <div class="facts-text">
                                 <h3 class="facts-plus" data-toggle="counter-up">150</h3>
-                                <p>Countries</p>
+                                <p>service</p>
                             </div>
                         </div>
                     </div>

@@ -360,6 +360,8 @@ a:focus {
     min-height: 300px;
     text-align: right;
     overflow: hidden;
+   
+
 }
 
 .carousel .carousel-img::after {
@@ -369,7 +371,7 @@ a:focus {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .5);  
     z-index: 1;
 }
 
@@ -2234,4 +2236,11 @@ iframe {
 .social_content{
     padding: 30px;
     margin-bottom: 100px;
+}
+
+
+/* image auto upload   */
+.section-title {
+	margin-bottom: 35px;
+	padding: 0px 80px;
 }

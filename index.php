@@ -13,7 +13,7 @@
                 <div class="carousel-text">
                     <h1>Let's be kind for children</h1>
                     <p>
-                        Let’s be kind to children, as they are the future of our world. A small act of love and care can make a lasting impact on their lives. Together, we can create a safe, happy, and nurturing environment for every child.
+                        Let’s be kind to children, as they are the future of our world. A small act of love and care can make a lasting impact on their lives.
                     </p>
                     <!-- <div class="carousel-btn">
                             <a class="btn btn-custom" href="">Donate Now</a>
@@ -30,7 +30,7 @@
                 <div class="carousel-text">
                     <h1>Get Involved with helping hand</h1>
                     <p>
-                        Join us in making a difference! Your support, whether through volunteering, donating, or spreading awareness, can bring hope to those in need. Together, we can create a brighter future—be a part of the change today
+                        Join us in making a difference! Your support, whether through volunteering, donating, or spreading awareness, can bring hope to those in need.
                     </p>
                     <!-- <div class="carousel-btn">
                             <a class="btn btn-custom" href="">Donate Now</a>
@@ -47,7 +47,7 @@
                 <div class="carousel-text">
                     <h1>Bringing smiles to millions</h1>
                     <p>
-                        A small act of kindness can light up a life. Through compassion, support, and generosity, we can bring hope and happiness to those in need. Together, let’s make the world a brighter place—one smile at a time!
+                        A small act of kindness can light up a life. Through compassion, support, and generosity, we can bring hope and happiness to those in need.
                     </p>
                     <!-- <div class="carousel-btn">
                             <a class="btn btn-custom" href="">Donate Now</a>
@@ -164,7 +164,7 @@
 
 
 <!-- Service Start -->
- <div class="service">
+<div class="service">
     <div class="container">
         <div class="section-header text-center">
             <p>What We Do?</p>
@@ -239,7 +239,7 @@
             </div>
         </div>
     </div>
-</div> 
+</div>
 <!-- Service End -->
 
 
@@ -415,7 +415,7 @@
 
 
 <!-- service  -->
- <section class="social_content">
+<section class="social_content">
 
     <div class="container ">
         <div class="text-center service_content">
@@ -438,10 +438,10 @@
                     <img src="img/images/education.png" class="card-img-top p-2" alt="..." style="border-radius:10px;">
                     <div class="card-body">
 
-                     
-                         <p class="text-center">
+
+                        <p class="text-center">
                             <a href="education_children.php" class="stretched-link">Education To Children</a>
-                         </p>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -451,7 +451,8 @@
                     <div class="card-body">
 
                         <p class="text-center">
-                            <a href="help_to_cyclone.php" class="stretched-link ">Help To Cyclone & Fire victims</a> </p>
+                            <a href="help_to_cyclone.php" class="stretched-link ">Help To Cyclone & Fire victims</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -461,7 +462,8 @@
                     <div class="card-body">
 
                         <p class="text-center">
-                            <a href="children_care.php" class="stretched-link">Childrens Care</a> </p>
+                            <a href="children_care.php" class="stretched-link">Childrens Care</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -470,7 +472,7 @@
                     <img src="img/images/help.png" class="card-img-top p-2" alt="..." style="border-radius:10px;">
                     <div class="card-body">
 
-                        <p class="text-center"> <a href="help_to_lepers.php" class="stretched-link" >Help To Lepers</a> </p>
+                        <p class="text-center"> <a href="help_to_lepers.php" class="stretched-link">Help To Lepers</a> </p>
                     </div>
                 </div>
             </div>
@@ -493,7 +495,7 @@
 
         </div>
     </div>
-</section> 
+</section>
 
 
 
@@ -633,12 +635,12 @@
 
 
 <!-- Team Start -->
- <div class="team ">
+<div class="team ">
     <div class="container">
         <div class="section-header text-center">
             <p>Meet Our Team</p>
             <h2>Meet Our Team</h2>
-          
+
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6">
@@ -845,25 +847,26 @@
         </div>
         <div class="contact-form">
             <div id="success"></div>
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+            <form action="contactform.php" method="post" role="form" class="php-email-form"
+                data-aos-delay="100">
                 <div class="control-group">
-                    <input type="text" class="form-control" id="name" placeholder="Your Name" required="required"
-                        data-validation-required-message="Please enter your name" />
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
                     <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
-                    <input type="email" class="form-control" id="email" placeholder="Your Email" required="required"
-                        data-validation-required-message="Please enter your email" />
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
                     <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
-                    <input type="text" class="form-control" id="subject" placeholder="Subject" required="required"
-                        data-validation-required-message="Please enter a subject" />
+                    <input type="text" class="form-control" name="number" placeholder="Your Number" required="required" data-validation-required-message="Please enter your number" />
                     <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
-                    <textarea class="form-control" id="message" placeholder="Message" required="required"
-                        data-validation-required-message="Please enter your message"></textarea>
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <textarea class="form-control" name="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
                     <p class="help-block text-danger"></p>
                 </div>
                 <div>

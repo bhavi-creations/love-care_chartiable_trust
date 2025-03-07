@@ -41,11 +41,11 @@
                     <div class="top-bar-left">
                         <div class="text">
                             <i class="fa fa-phone-alt"></i>
-                            <p>+91-7660072143</p>
+                            <p>+91-7660072143 , 9577118999</p>
                         </div>
                         <div class="text">
                             <i class="fa fa-envelope"></i>
-                            <p>pdpaulpalivela@gmail.com</p>
+                            <p>loveandcarecharitabletrusty@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -90,9 +90,11 @@
                         </div>
                     </div>
                     <a href="gallery.php" class="nav-item nav-link">Gallery</a>
-                    <!-- <a href="blog.php" class="nav-item nav-link">Blog</a> -->
-                    
+                    <a href="donation.php" class="nav-item nav-link">Donation</a>
+                    <a href="registration.php" class="nav-item nav-link">Registration</a>
                     <a href="contact.php" class="nav-item nav-link">Contact</a>
+
+                   
                 </div>
             </div>
         </div>
