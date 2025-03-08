@@ -1,50 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bank Details as Fields</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-   
-  </style>
-</head>
-<body>
+<div class="about">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-lg-6">
+              <div class="about-img d-none d-md-block" style="background-image: url('img/about.png'); background-size: cover; background-position: center; height: 100%; width: 100%;"></div>
+          </div>
+          <div class="col-lg-6">
+              <div class="section-header">
+                  <p> About Us</p>
+                  <h2> Love and Care Charitable Trust </h2>
+              </div>
+              <div class="about-tab">
+                  <ul class="nav nav-pills nav-justified" id="aboutTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="about-tab" data-bs-toggle="pill" data-bs-target="#tab-content-1" type="button" role="tab">About</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="mission-tab" data-bs-toggle="pill" data-bs-target="#tab-content-2" type="button" role="tab">Mission</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="vision-tab" data-bs-toggle="pill" data-bs-target="#tab-content-3" type="button" role="tab">Vision</button>
+                      </li>
+                  </ul>
 
-<section>
-  <div class="container my-5">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="card p-3 bank-card">
-          <div class="card-header text-center">
-            <h1>Our Bank Detail</h1>
-            <h3>Love and Care Charitable Trust</h3>
+                  <div class="tab-content mt-3" id="aboutTabContent">
+                      <div id="tab-content-1" class="tab-pane fade show active" role="tabpanel">
+                          Love and Care Charitable Trust is a non-governmental, non-profit organization committed
+                          to uplifting underprivileged communities through compassionate service. With a mission
+                          to spread love, care, and hope, the trust actively works in the areas of healthcare,
+                          education, women empowerment, and social welfare.
+                          <br>Dedicated to making a meaningful impact, the trust provides free medical assistance,
+                          educational support for underprivileged children, skill development programs for women,
+                          and relief for the homeless and needy. Through regular initiatives such as food
+                          distribution drives, medical camps, and vocational training, Love and Care Charitable
+                          Trust strives to create a better society where every individual can live with dignity
+                          and self-reliance.
+                      </div>
+                      <div id="tab-content-2" class="tab-pane fade" role="tabpanel">
+                          Love and Care Charitable Trust is dedicated to serving the underprivileged with
+                          compassion, dignity, and inclusivity. Our mission is to uplift lives, empower
+                          communities, and create a positive social impact through sustainable initiatives in
+                          healthcare, education, women empowerment, and social welfare.
+                          <br>
+                          <strong>✅ Provide quality healthcare</strong> to those in need through free medical
+                          camps, health awareness programs, and support for the elderly and disabled. <br>
+                          <strong>✅ Ensure education for all,</strong> focusing on underprivileged children by
+                          offering scholarships, learning resources, and skill development opportunities.<br>
+                          <strong>✅ Empower women </strong>by promoting self-reliance through vocational training,
+                          entrepreneurship support, and financial independence programs.<br>
+                          <strong>✅ Extend relief and support </strong>to the homeless, orphans, and those
+                          affected by poverty and disaster situations.<br>
+                      </div>
+                      <div id="tab-content-3" class="tab-pane fade" role="tabpanel">
+                          Love and Care Charitable Trust envisions a world where compassion, equality, and
+                          opportunity uplift every individual, regardless of their socio-economic background. Our
+                          goal is to build a society where healthcare, education, and basic necessities are
+                          accessible to all, ensuring a life of dignity and self-reliance.
+                          <p><strong>✅ Create a healthier society </strong>by providing medical assistance and
+                              promoting awareness on health and hygiene.</p>
+                          <p><strong>✅ Ensure education for all</strong> empowering children with knowledge and
+                              skills for a brighter future.</p>
+                          <p><strong>✅ Foster women empowerment</strong> by enabling self-sufficiency through
+                              skill training and financial independence.</p>
+                          <p><strong>✅ Support the underprivileged,</strong> offering food, shelter, and resources
+                              to those in need.</p>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="card-body">
-            <form>
-              <div class="form-group">
-                <label for="bank">Bank:</label>
-                <input type="text" class="form-control" id="bank" value="Union bank of India" readonly>
-              </div>
-              <div class="form-group">
-                <label for="account">Account No:</label>
-                <input type="text" class="form-control" id="account" value="181121010000057" readonly>
-              </div>
-              <div class="form-group">
-                <label for="ifsc">IFSC Code:</label>
-                <input type="text" class="form-control" id="ifsc" value="UBIN0918113" readonly>
-              </div>
-            </form>
-          </div>
-        </div>
       </div>
-    </div>
   </div>
-</section>
-
-<!-- Optional Bootstrap JS dependencies -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+</div>

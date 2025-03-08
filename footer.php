@@ -32,7 +32,7 @@
                     </div> -->
                 </div>
             </div>
-            <div class="col-lg-2 col-md-6">
+            <div class="col-lg-2 col-6">
                 <div class="footer-link">
                     <h2>Popular Links</h2>
                     <a href="index.php">Home</a>
@@ -44,7 +44,7 @@
                     <a href="contact.php">Contact Us</a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-6">
                 <div class="footer-link">
                     <h2>Useful Links</h2>
                     <a href="help_disable_childer.php">Help to Disable Children</a>

@@ -88,7 +88,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <div class="about-img d-none d-md-block" data-parallax="scroll" data-image-src="img/about.png"></div>
+                <div class="about-img d-none d-md-block" style="background: url('img/about.png') center center/cover no-repeat; height: 400px; border-radius: 10px;"></div>
             </div>
             <div class="col-lg-6">
                 <div class="section-header">
@@ -98,61 +98,54 @@
                 <div class="about-tab">
                     <ul class="nav nav-pills nav-justified">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="pill" href="#tab-content-1">About</a>
+                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#tab-content-1">About</button>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#tab-content-2">Mission</a>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab-content-2">Mission</button>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#tab-content-3">Vision</a>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab-content-3">Vision</button>
                         </li>
                     </ul>
 
-                    <div class="tab-content">
-                        <div id="tab-content-1" class="container tab-pane active">
-                            Love and Care Charitable Trust is a non-governmental, non-profit organization committed
-                            to uplifting underprivileged communities through compassionate service. With a mission
-                            to spread love, care, and hope, the trust actively works in the areas of healthcare,
-                            education, women empowerment, and social welfare.
-
-                            <br>Dedicated to making a meaningful impact, the trust provides free medical assistance,
-                            educational support for underprivileged children, skill development programs for women,
-                            and relief for the homeless and needy. Through regular initiatives such as food
-                            distribution drives, medical camps, and vocational training, Love and Care Charitable
-                            Trust strives to create a better society where every individual can live with dignity
-                            and self-reliance.
-
+                    <div class="tab-content mt-3">
+                        <div id="tab-content-1" class="tab-pane fade show active">
+                            <p>
+                                Love and Care Charitable Trust is a non-governmental, non-profit organization committed
+                                to uplifting underprivileged communities through compassionate service. With a mission
+                                to spread love, care, and hope, the trust actively works in healthcare,
+                                education, women empowerment, and social welfare.
+                            </p>
+                            <p>
+                                Dedicated to making a meaningful impact, the trust provides free medical assistance,
+                                educational support, skill development programs, and relief for the needy. Through regular initiatives such as
+                                food drives and medical camps, we strive to create a better society.
+                            </p>
                         </div>
-                        <div id="tab-content-2" class="container tab-pane fade">
-                            Love and Care Charitable Trust is dedicated to serving the underprivileged with
-                            compassion, dignity, and inclusivity. Our mission is to uplift lives, empower
-                            communities, and create a positive social impact through sustainable initiatives in
-                            healthcare, education, women empowerment, and social welfare.
-
-                            . <br>
-                            <strong>✅Provide quality healthcare</strong> to those in need through free medical
-                            camps, health awareness programs, and support for the elderly and disabled. <br>
-                            <strong>✅ Ensure education for all,</strong> focusing on underprivileged children by
-                            offering scholarships, learning resources, and skill development opportunities.<br>
-                            <strong>✅ Empower women </strong>by promoting self-reliance through vocational training,
-                            entrepreneurship support, and financial independence programs.<br>
-                            <strong>✅ Extend relief and support </strong>to the homeless, orphans, and those
-                            affected by poverty and disaster situations.<br>
+                        <div id="tab-content-2" class="tab-pane fade">
+                            <p>
+                                Love and Care Charitable Trust is dedicated to serving the underprivileged with
+                                compassion, dignity, and inclusivity. Our mission is to uplift lives, empower
+                                communities, and create a positive social impact through sustainable initiatives.
+                            </p>
+                            <ul>
+                                <li><strong>✅ Provide quality healthcare</strong> through free medical camps and awareness programs.</li>
+                                <li><strong>✅ Ensure education for all</strong> by offering scholarships and learning resources.</li>
+                                <li><strong>✅ Empower women</strong> through vocational training and financial independence programs.</li>
+                                <li><strong>✅ Support the homeless</strong> by offering relief and rehabilitation.</li>
+                            </ul>
                         </div>
-                        <div id="tab-content-3" class="container tab-pane fade">
-                            Love and Care Charitable Trust envisions a world where compassion, equality, and
-                            opportunity uplift every individual, regardless of their socio-economic background. Our
-                            goal is to build a society where healthcare, education, and basic necessities are
-                            accessible to all, ensuring a life of dignity and self-reliance
-                            <p><strong>✅ Create a healthier society </strong>by providing medical assistance and
-                                promoting awareness on health and hygiene.</p>
-                            <p><strong>✅ Ensure education for all</strong> empowering children with knowledge and
-                                skills for a brighter future.</p>
-                            <p><strong>✅ Foster women empowerment</strong> by enabling self-sufficiency through
-                                skill training and financial independence.</p>
-                            <p><strong>✅ Support the underprivileged,</strong> offering food, shelter, and resources
-                                to those in need.</p>
-
+                        <div id="tab-content-3" class="tab-pane fade">
+                            <p>
+                                Our vision is to build a society where healthcare, education, and basic necessities are
+                                accessible to all, ensuring a life of dignity and self-reliance.
+                            </p>
+                            <ul>
+                                <li><strong>✅ Create a healthier society</strong> through medical assistance and awareness programs.</li>
+                                <li><strong>✅ Ensure education for all</strong> by empowering children with knowledge.</li>
+                                <li><strong>✅ Foster women empowerment</strong> by enabling self-sufficiency through skills training.</li>
+                                <li><strong>✅ Support the underprivileged</strong> by providing food, shelter, and resources.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -160,6 +153,9 @@
         </div>
     </div>
 </div>
+
+
+
 <!-- About End -->
 
 
@@ -500,58 +496,66 @@
 
 
 <!-- Donate Start -->
-<div class="donate" data-parallax="scroll" data-image-src="img/donate.jpg">
+<div class="donate position-relative py-5">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-7">
                 <div class="donate-content">
                     <div class="section-header">
                         <p>Donate Now</p>
-                        <h2>Let's donate to needy people for better lives</h2>
+                        <h2 class="text-white">Let's donate to needy people for better lives</h2>
                     </div>
                     <div class="donate-text">
                         <p>
                             Donating is more than just giving money—it’s about making a difference in someone’s life. Whether it's supporting education, healthcare, disaster relief, or community development, every contribution helps bring positive change.
-
-
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5">
-                <div class="donate-form">
+            <div class="col-lg-5 my-5">
+                <div class="donate-form p-4 bg-white rounded shadow">
                     <form id="donationForm">
-                        <div class="control-group">
-                            <input type="text" class="form-control" placeholder="Name" required="required" id="donorName" />
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Name" required id="donorName" />
                         </div>
-                        <div class="control-group">
-                            <input type="email" class="form-control" placeholder="Email" required="required" id="donorEmail" />
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required id="donorEmail" />
                         </div>
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                            <label class="btn btn-custom active">
-                                <input type="radio" name="amount" value="10" checked> 100
-                            </label>
-                            <label class="btn btn-custom">
-                                <input type="radio" name="amount" value="20">200
-                            </label>
-                            <label class="btn btn-custom">
-                                <input type="radio" name="amount" value="30">500
-                            </label>
+                        <div class="btn-group w-100" role="group">
+                            <input type="radio" class="btn-check" name="amount" id="amount1" value="100" checked>
+                            <label class="btn btn-outline-primary" for="amount1">100</label>
+                            <input type="radio" class="btn-check" name="amount" id="amount2" value="200">
+                            <label class="btn btn-outline-primary" for="amount2">200</label>
+                            <input type="radio" class="btn-check" name="amount" id="amount3" value="500">
+                            <label class="btn btn-outline-primary" for="amount3">500</label>
                         </div>
-                        <div>
-                            <button class="btn btn-custom" type="submit">Donate Now</button>
+                        <div class="mt-3 text-center">
+                            <button class="btn btn-primary w-100" type="submit">Donate Now</button>
                         </div>
                     </form>
                     <!-- QR Code Display (Hidden Initially) -->
-                    <div id="qrCodeContainer" style="display: none; margin-top: 20px; text-align: center;">
+                    <div id="qrCodeContainer" class="text-center mt-3" style="display: none;">
                         <p>Scan the QR code to donate</p>
-                        <img id="qrCode" src="" alt="QR Code" style="width: 200px; height: 200px;">
+                        <img id="qrCode" src="" alt="QR Code" class="img-fluid" style="max-width: 200px;">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        function updateBackground() {
+            document.querySelector(".donate").style.backgroundImage = "url('img/donate.jpg')";
+        }
+        updateBackground();
+        window.addEventListener("resize", updateBackground);
+    });
+</script>
+
 <!-- Donate End -->
 
 <script>
@@ -635,7 +639,7 @@
 
 
 <!-- Team Start -->
-<div class="team ">
+<div class="team my-5 ">
     <div class="container">
         <div class="section-header text-center">
             <!-- <p>Meet Our Team</p> -->
@@ -718,39 +722,39 @@
 
 
 <!-- Volunteer Start -->
-<div class="volunteer" data-parallax="scroll" data-image-src="img/volunteer.jpg">
-    <div class="container">
+<div class="volunteer position-relative">
+    <!-- Background Overlay -->
+    <div class="volunteer-overlay"></div>
+
+    <div class="container position-relative">
         <div class="row align-items-center">
             <div class="col-lg-5">
-                <div class="volunteer-form">
+                <div class="volunteer-form p-4 bg-white rounded shadow">
                     <form>
-                        <div class="control-group">
-                            <input type="text" class="form-control" placeholder="Name" required="required" />
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Name" required />
                         </div>
-                        <div class="control-group">
-                            <input type="email" class="form-control" placeholder="Email" required="required" />
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required />
                         </div>
-                        <div class="control-group">
-                            <textarea class="form-control" placeholder="Why you want to become a volunteer?"
-                                required="required"></textarea>
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Why do you want to become a volunteer?" required></textarea>
                         </div>
                         <div>
-                            <button class="btn btn-custom" type="submit">Become a volunteer</button>
+                            <button class="btn btn-primary w-100" type="submit">Become a Volunteer</button>
                         </div>
                     </form>
                 </div>
             </div>
             <div class="col-lg-7">
-                <div class="volunteer-content">
+                <div class="volunteer-content text-white">
                     <div class="section-header">
-                        <p>Become A Volunteer</p>
+                        <p class="text-white">Become A Volunteer</p>
                         <h2>Let’s make a difference in the lives of others</h2>
                     </div>
                     <div class="volunteer-text">
                         <p>
                             Volunteers are the driving force behind our charitable trust, bringing hope and support to those in need. Their dedication helps us reach more people, create meaningful change, and make a lasting impact on communities.
-
-
                         </p>
                     </div>
                 </div>
@@ -758,6 +762,18 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        function updateBackground() {
+            document.querySelector(".volunteer").style.backgroundImage = "url('img/volunteer.jpg')";
+        }
+        updateBackground();
+        window.addEventListener("resize", updateBackground);
+    });
+</script>
+
 <!-- Volunteer End -->
 
 
