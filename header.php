@@ -74,50 +74,68 @@
     <!-- Nav Bar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a href="index.php"  >
-        <img src="img/images/header.png" alt="Logo" class="img-fluid logo_image  " style="border-radius: 4px;" >
-        
+        <!-- Logo on Left -->
+        <a href="index.php" class="navbar-brand">
+            <img src="img/images/header.png" alt="Logo" class="img-fluid logo_image" style="border-radius: 4px; height: 50px;">
+        </a>
 
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
-              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-start" id="navbarCollapse">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="index.php" class="nav-link active" aria-current="page">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.php" class="nav-link">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <!-- Clicking the link redirects to service.php, while hover shows the dropdown -->
-            <a href="service.php" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Service
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="help_disable_childer.php" class="dropdown-item">Help to Disable Children</a></li>
-              <li><a href="education_children.php" class="dropdown-item">Education Children</a></li>
-              <li><a href="help_to_cyclone.php" class="dropdown-item">Help To Cyclone & Fire Victims</a></li>
-              <li><a href="children_care.php" class="dropdown-item">Children Care</a></li>
-              <li><a href="help_to_lepers.php" class="dropdown-item">Help to Lepers</a></li>
-              <li><a href="water_sanititation.php" class="dropdown-item">Water Sanitation</a></li>
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Items -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.php" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.php" class="nav-link">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <!-- Clicking Service redirects to service.php -->
+                    <a href="service.php" class="nav-link dropdown-toggle" id="serviceDropdown" role="button">
+                        Service
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                        <li><a href="help_disable_childer.php" class="dropdown-item">Help to Disabled Children</a></li>
+                        <li><a href="education_children.php" class="dropdown-item">Education Children</a></li>
+                        <li><a href="help_to_cyclone.php" class="dropdown-item">Help To Cyclone & Fire Victims</a></li>
+                        <li><a href="children_care.php" class="dropdown-item">Children Care</a></li>
+                        <li><a href="help_to_lepers.php" class="dropdown-item">Help to Lepers</a></li>
+                        <li><a href="water_sanititation.php" class="dropdown-item">Water Sanitation</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.php" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="registration.php" class="nav-link">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.php" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="donation.php" class="nav-link">Donation</a>
+                </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a href="gallery.php" class="nav-link">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a href="registration.php" class="nav-link">Registration</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.php" class="nav-link">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a href="donation.php" class="nav-link">Donation</a>
-          </li>
-        </ul>
-      </div>
+        </div>
     </div>
-  </nav>
+</nav>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const serviceDropdown = document.getElementById("serviceDropdown");
+
+        // Enable dropdown toggle on mobile view
+        serviceDropdown.addEventListener("click", function (event) {
+            if (window.innerWidth < 992) { // Only for mobile
+                event.preventDefault();
+                this.nextElementSibling.classList.toggle("show");
+            }
+        });
+    });
+</script>

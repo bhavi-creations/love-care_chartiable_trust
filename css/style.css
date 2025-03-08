@@ -332,7 +332,7 @@ a:focus {
 @media  (max-width:425px ) {
     .logo_image{
     
-        width: 250px !important;
+        width: 230px !important;
         height: 100px !important;
         max-height:70px !important;
     
@@ -2594,3 +2594,18 @@ background-color: #f4f4f4;
 }
 
 
+
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Show dropdown on hover (Desktop) */
+@media (min-width: 992px) {
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
