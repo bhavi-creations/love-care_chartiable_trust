@@ -75,7 +75,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a href="index.php"  >
-        <img src="img/images/header.png" alt="Logo" class="img-fluid logo_image  " >
+        <img src="img/images/header.png" alt="Logo" class="img-fluid logo_image  " style="border-radius: 4px;" >
         
 
       </a>
