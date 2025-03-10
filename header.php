@@ -72,11 +72,13 @@
     <!-- Top Bar End -->
 
     <!-- Nav Bar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
     <div class="container-fluid">
         <!-- Logo on Left -->
         <a href="index.php" class="navbar-brand">
-            <img src="img/images/header.png" alt="Logo" class="img-fluid logo_image" style="border-radius: 4px; height: 50px;">
+            <img src="img/images/header_logo1.png" alt="Logo" class="img-fluid logo_image " style="border-radius: 4px; height: 50px;">
+            <!-- <img src="img/images/header_logo1.png" alt="Logo" class="img-fluid logo_image d-md-none" style="border-radius: 4px; height: 50px;">     -->
+
         </a>
 
         <!-- Mobile Toggle Button -->

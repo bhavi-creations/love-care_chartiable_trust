@@ -23,7 +23,7 @@ h6 {
     font-family:"poppins",'Gill Sans';
 }
 p{
-    font-family:"poppins",'Gill Sans';
+    /* font-family:"poppins",'Gill Sans'; */
     font-weight: 400;
 
 }
@@ -261,7 +261,10 @@ a:focus {
     position: relative;
     transition: .5s;
     z-index: 999;
+
 }
+
+
 
 .navbar.nav-sticky {
     position: fixed;
@@ -349,7 +352,8 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     padding: 10px 15px 8px 15px;
-    color: #ffffff;
+    color:#139ced   ;
+    font-weight: 700;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -370,16 +374,19 @@ a:focus {
         position: absolute;
         width: 100%;
         top: 45px;
-        padding: 20px 60px;
-        background: transparent !important;
+        /* padding: 20px 60px; */
+        background-color: white;
+        opacity: 0.5 !important;
+        /* background: transparent !important; */
         border-bottom: 1px solid rgba(255, 255, 255, .3);
         z-index: 9;
     }
     
     .navbar.nav-sticky {
-        padding: 10px 60px;
-        background: #20212B !important;
+        /* padding: 10px 60px; */
+        background: #8cc3e5 !important ;
         border-bottom: none;
+        opacity: 1 !important;
     }
     
     .page .navbar {
@@ -2609,3 +2616,29 @@ background-color: #f4f4f4;
         margin-top: 0;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

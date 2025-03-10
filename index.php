@@ -422,7 +422,7 @@
             <div class="col-12 col-md-4">
                 <div class="card">
                     <img src="img/images/disable_children.png" class="card-img-top p-2" alt="..." style="border-radius:10px;">
-                    <div class="card-body position-relative">
+                    <div class="card-body ">
                         <p class="text-center">
                             <a href="help_disable_childer.php" class="stretched-link">Help To Disable Children</a>
                         </p>
@@ -730,18 +730,23 @@
         <div class="row align-items-center">
             <div class="col-lg-5">
                 <div class="volunteer-form p-4 bg-white rounded shadow">
-                    <form>
+                    <form action="contactform.php" method="post" role="form" class="php-email-form"
+                        data-aos-delay="100">
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Name" required />
+                            <input type="text" name="name" class="form-control" placeholder="Name" required />
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Email" required />
+                            <input type="email" name="email" class="form-control" placeholder="Email" required />
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control" name="number" placeholder="Your Number" required="required" data-validation-required-message="Please enter your number" />
+                            <p class="help-block text-danger"></p>
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" placeholder="Why do you want to become a volunteer?" required></textarea>
+                            <textarea class="form-control" name="meassage" placeholder="Why do you want to become a volunteer?" required></textarea>
                         </div>
                         <div>
-                            <button class="btn btn-primary w-100" type="submit">Become a Volunteer</button>
+                            <button class="btn btn-primary w-100" id="sendMessageButton" type="submit">Become a Volunteer</button>
                         </div>
                     </form>
                 </div>
@@ -765,7 +770,7 @@
 
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
         function updateBackground() {
             document.querySelector(".volunteer").style.backgroundImage = "url('img/volunteer.jpg')";
         }
