@@ -19,7 +19,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="footer-contact">
                     <h2>Our Head Office</h2>
-                    <p><i class="fa fa-map-marker-alt"></i> D.NO : 4-37,church street,K.GANGAVARAM MANDALAM,kunduru,DR.B.R.Ambedkar konaseema distict ,pin-533262</p>
+                    <p><i class="fa fa-map-marker-alt"></i> D.NO : 4-37,church street, <br>  K.GANGAVARAM MANDALAM,kunduru, <br> DR.B.R.Ambedkar konaseema distict, <br> pin-533262</p>
                     <p><i class="fa fa-envelope"></i>loveandcarecharitabletrusty@gmail.com</p>
                     <p><i class="fa fa-phone-alt"></i>+91-7660072143 , 9577118999</p>
 
