@@ -742,11 +742,11 @@
                             <input type="text" class="form-control" name="number" placeholder="Your Number" required="required" data-validation-required-message="Please enter your number" />
                             <p class="help-block text-danger"></p>
                         </div>
-                        <div class="mb-3"> 
+                        <div class="mb-3">
                             <textarea class="form-control" name="meassage" placeholder="Why do you want to become a volunteer?" required></textarea>
                         </div>
                         <div>
-                            <button class="btn btn-primary w-100"  id="sendMessageButton" type="submit">Become a Volunteer</button>
+                            <button class="btn btn-primary w-100" id="sendMessageButton" type="submit">Become a Volunteer</button>
                         </div>
                     </form>
                 </div>
@@ -778,6 +778,11 @@
         window.addEventListener("resize", updateBackground);
     });
 </script>
+
+
+
+
+
 
 <!-- Volunteer End -->
 

@@ -1,72 +1,77 @@
-<div class="about">
-  <div class="container">
-      <div class="row align-items-center">
-          <div class="col-lg-6">
-              <div class="about-img d-none d-md-block" style="background-image: url('img/about.png'); background-size: cover; background-position: center; height: 100%; width: 100%;"></div>
-          </div>
-          <div class="col-lg-6">
-              <div class="section-header">
-                  <p> About Us</p>
-                  <h2> Love and Care Charitable Trust </h2>
-              </div>
-              <div class="about-tab">
-                  <ul class="nav nav-pills nav-justified" id="aboutTab" role="tablist">
-                      <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="about-tab" data-bs-toggle="pill" data-bs-target="#tab-content-1" type="button" role="tab">About</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="mission-tab" data-bs-toggle="pill" data-bs-target="#tab-content-2" type="button" role="tab">Mission</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="vision-tab" data-bs-toggle="pill" data-bs-target="#tab-content-3" type="button" role="tab">Vision</button>
-                      </li>
-                  </ul>
-
-                  <div class="tab-content mt-3" id="aboutTabContent">
-                      <div id="tab-content-1" class="tab-pane fade show active" role="tabpanel">
-                          Love and Care Charitable Trust is a non-governmental, non-profit organization committed
-                          to uplifting underprivileged communities through compassionate service. With a mission
-                          to spread love, care, and hope, the trust actively works in the areas of healthcare,
-                          education, women empowerment, and social welfare.
-                          <br>Dedicated to making a meaningful impact, the trust provides free medical assistance,
-                          educational support for underprivileged children, skill development programs for women,
-                          and relief for the homeless and needy. Through regular initiatives such as food
-                          distribution drives, medical camps, and vocational training, Love and Care Charitable
-                          Trust strives to create a better society where every individual can live with dignity
-                          and self-reliance.
-                      </div>
-                      <div id="tab-content-2" class="tab-pane fade" role="tabpanel">
-                          Love and Care Charitable Trust is dedicated to serving the underprivileged with
-                          compassion, dignity, and inclusivity. Our mission is to uplift lives, empower
-                          communities, and create a positive social impact through sustainable initiatives in
-                          healthcare, education, women empowerment, and social welfare.
-                          <br>
-                          <strong>✅ Provide quality healthcare</strong> to those in need through free medical
-                          camps, health awareness programs, and support for the elderly and disabled. <br>
-                          <strong>✅ Ensure education for all,</strong> focusing on underprivileged children by
-                          offering scholarships, learning resources, and skill development opportunities.<br>
-                          <strong>✅ Empower women </strong>by promoting self-reliance through vocational training,
-                          entrepreneurship support, and financial independence programs.<br>
-                          <strong>✅ Extend relief and support </strong>to the homeless, orphans, and those
-                          affected by poverty and disaster situations.<br>
-                      </div>
-                      <div id="tab-content-3" class="tab-pane fade" role="tabpanel">
-                          Love and Care Charitable Trust envisions a world where compassion, equality, and
-                          opportunity uplift every individual, regardless of their socio-economic background. Our
-                          goal is to build a society where healthcare, education, and basic necessities are
-                          accessible to all, ensuring a life of dignity and self-reliance.
-                          <p><strong>✅ Create a healthier society </strong>by providing medical assistance and
-                              promoting awareness on health and hygiene.</p>
-                          <p><strong>✅ Ensure education for all</strong> empowering children with knowledge and
-                              skills for a brighter future.</p>
-                          <p><strong>✅ Foster women empowerment</strong> by enabling self-sufficiency through
-                              skill training and financial independence.</p>
-                          <p><strong>✅ Support the underprivileged,</strong> offering food, shelter, and resources
-                              to those in need.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
+<html>
+<button id="rzp-button1" class="btn btn-outline-dark btn-lg"><i class="fas fa-money-bill"></i> Own Checkout</button>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+  var options = {
+    "key": "[YOUR_KEY_ID]", // Enter the Key ID generated from the Dashboard
+    "amount": "10000",
+    "currency": "INR",
+    "description": "Acme Corp",
+    "image": "example.com/image/rzp.jpg",
+    "prefill":
+    {
+      "email": "loveandcarecharitabletrusty@gmail.com",
+      "contact": +917660072143 ,
+    },
+    config: {
+      display: {
+        blocks: {
+          utib: { //name for Axis block
+            name: "Pay Using Axis Bank",
+            instruments: [
+              {
+                method: "card",
+                issuers: ["UTIB"]
+              },
+              {
+                method: "netbanking",
+                banks: ["UTIB"]
+              },
+            ]
+          },
+          other: { //  name for other block
+            name: "Other Payment Methods",
+            instruments: [
+              {
+                method: "card",
+                issuers: ["ICIC"]
+              },
+              {
+                method: 'netbanking',
+              }
+            ]
+          }
+        },
+        hide: [
+          {
+          method: "upi"
+          }
+        ],
+        sequence: ["block.utib", "block.other"],
+        preferences: {
+          show_default_blocks: false // Should Checkout show its default blocks?
+        }
+      }
+    },
+    "handler": function (response) {
+      alert(response.razorpay_payment_id);
+    },
+    "modal": {
+      "ondismiss": function () {
+        if (confirm("Are you sure, you want to close the form?")) {
+          txt = "You pressed OK!";
+          console.log("Checkout form closed by the user");
+        } else {
+          txt = "You pressed Cancel!";
+          console.log("Complete the Payment")
+        }
+      }
+    }
+  };
+  var rzp1 = new Razorpay(options);
+  document.getElementById('rzp-button1').onclick = function (e) {
+    rzp1.open();
+    e.preventDefault();
+  }
+</script>
+</html>

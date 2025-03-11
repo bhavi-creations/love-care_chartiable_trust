@@ -150,8 +150,8 @@
                 <h1 class="text-center my-5">Donate</h1>
 
                 <div class="donate-content">
-                        
-                    </div>
+
+                </div>
                 <div class="col-12 col-md-6 ">
                     <p>
                         Your donation transforms lives. When you contribute to our charitable trust, you're directly supporting programs that provide education, healthcare, and essential community services. Every gift—whether it's a one-time contribution or a recurring donation—helps us address pressing challenges and build a better future. </p>
@@ -173,19 +173,19 @@
                         <h2>Payment Details</h2>
                         <form id="donationForm">
                             <label for="amount">Amount (INR):</label>
-                            <input type="number" id="amount" name="amount" placeholder="Enter donation amount" required>
+                            <input type="number" id="donation-amount" placeholder="Enter amount" min="1" required>
 
                             <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            <input type="text" id="donor-name" placeholder="Enter your name" required>
 
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            <input type="email" id="donor-email" placeholder="Enter your email" required>
 
                             <label for="mobile">Mobile Number:</label>
-                            <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+                            <input type="text" id="donor-mobile" placeholder="Enter your mobile number" required>
 
                             <div class="button-group">
-                                <button type="button" id="donateBtn">Donate</button>
+                                <button type="button" id="pay-button">Donate Now</button>
                             </div>
                         </form>
                     </div>
@@ -197,87 +197,84 @@
 </section>
 
 
-  </style>
-</head>
-<body>
+<!-- <button id="pay-button">Donate Now</button> -->
+<!-- Donation Form -->
 
-<section>
-  <div class="container my-5">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="card p-3 bank-card">
-          <div class="card-header text-center">
-            <h1>Our Bank Detail</h1>
-            <h3>Love and Care Charitable Trust</h3>
-          </div>
-          <div class="card-body">
-            <form>
-              <div class="form-group">
-                <label for="bank">Bank:</label>
-                <input type="text" class="form-control" id="bank" value="Union bank of India" readonly>
-              </div>
-              <div class="form-group">
-                <label for="account">Account No:</label>
-                <input type="text" class="form-control" id="account" value="181121010000057" readonly>
-              </div>
-              <div class="form-group">
-                <label for="ifsc">IFSC Code:</label>
-                <input type="text" class="form-control" id="ifsc" value="UBIN0918113" readonly>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- Optional Bootstrap JS dependencies -->
-<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script> -->
+<!-- Razorpay Script -->
+<!-- Donation Form -->
+
+
+<!-- Razorpay Script -->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
 <script>
-    document.getElementById("donateBtn").addEventListener("click", function() {
-        // Retrieve values from the form
-        var amount = document.getElementById("amount").value;
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var mobile = document.getElementById("mobile").value;
+    document.getElementById("pay-button").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent form submission
 
-        // Basic validation
-        if (!amount || !name || !email || !mobile) {
-            alert("Please fill in all fields.");
+        // Get input values
+        var amountInput = document.getElementById("donation-amount").value;
+        var donorName = document.getElementById("donor-name").value;
+        var donorEmail = document.getElementById("donor-email").value;
+        var donorMobile = document.getElementById("donor-mobile").value;
+
+        // Validation
+        if (!amountInput || amountInput <= 0) {
+            alert("Please enter a valid amount.");
+            return;
+        }
+        if (!donorName || !donorEmail || !donorMobile) {
+            alert("Please fill all fields.");
             return;
         }
 
-        // Convert amount to paise (Razorpay requires the amount in the smallest currency unit)
-        var amountInPaise = parseFloat(amount) * 100;
-
-        // Prepare Razorpay options
+        // Razorpay Options
         var options = {
-            "key": "YOUR_RAZORPAY_KEY", // Replace with your Razorpay API Key
-            "amount": amountInPaise,
+            "key": "rzp_live_0INdgHCPfleeJ6", // Replace with your Razorpay API Key
+            "amount": amountInput * 100, // Convert INR to paise
             "currency": "INR",
-            "name": "Charitable Trust",
+            "name": "Love And Care Charitable Trust",
             "description": "Donation Payment",
-            "image": "https://yourwebsite.com/logo.png", // Optional: Your logo URL
+            "image": "img/images/footer_logo.png",
             "handler": function(response) {
-                // Handle successful payment here
                 alert("Payment Successful! Payment ID: " + response.razorpay_payment_id);
-                // Redirect to thank you page or process further
-                window.location.href = "thank-you.php";
+
+                // Send payment details to backend (optional)
+                fetch('/save-donation', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            name: donorName,
+                            email: donorEmail,
+                            mobile: donorMobile,
+                            amount: amountInput,
+                            payment_id: response.razorpay_payment_id
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(data => console.log('Donation saved:', data))
+                    .catch(error => console.error('Error:', error));
             },
             "prefill": {
-                "name": name,
-                "email": email,
-                "contact": mobile
+                "name": donorName,
+                "email": donorEmail,
+                "contact": donorMobile
             },
             "theme": {
-                "color": "#007bff"
+                "color": "#3399cc"
+            },
+            "method": {
+                "upi": true, // Enable UPI payments
+                "upi_intent": true, // Enable UPI QR Code scanning option
+                "card": true,
+                "netbanking": true,
+                "wallet": true
             }
         };
 
-        // Open Razorpay checkout
+        // Open Razorpay Payment Window
         var rzp1 = new Razorpay(options);
         rzp1.open();
     });
@@ -286,4 +283,96 @@
 
 
 
-<?php include 'footer.php'; ?>
+
+
+</style>
+</head>
+
+<body>
+
+    <section>
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card p-3 bank-card">
+                        <div class="card-header text-center">
+                            <h1>Our Bank Detail</h1>
+                            <h3>Love and Care Charitable Trust</h3>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="bank">Bank:</label>
+                                    <input type="text" class="form-control" id="bank" value="Union bank of India" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="account">Account No:</label>
+                                    <input type="text" class="form-control" id="account" value="181121010000057" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ifsc">IFSC Code:</label>
+                                    <input type="text" class="form-control" id="ifsc" value="UBIN0918113" readonly>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional Bootstrap JS dependencies -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <script>
+        document.getElementById("donateBtn").addEventListener("click", function() {
+            // Retrieve values from the form
+            var amount = document.getElementById("amount").value;
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var mobile = document.getElementById("mobile").value;
+
+            // Basic validation
+            if (!amount || !name || !email || !mobile) {
+                alert("Please fill in all fields.");
+                return;
+            }
+
+            // Convert amount to paise (Razorpay requires the amount in the smallest currency unit)
+            var amountInPaise = parseFloat(amount) * 100;
+
+            // Prepare Razorpay options
+            var options = {
+                "key": "YOUR_RAZORPAY_KEY", // Replace with your Razorpay API Key
+                "amount": amountInPaise,
+                "currency": "INR",
+                "name": "Charitable Trust",
+                "description": "Donation Payment",
+                "image": "https://yourwebsite.com/logo.png", // Optional: Your logo URL
+                "handler": function(response) {
+                    // Handle successful payment here
+                    alert("Payment Successful! Payment ID: " + response.razorpay_payment_id);
+                    // Redirect to thank you page or process further
+                    window.location.href = "thank-you.php";
+                },
+                "prefill": {
+                    "name": name,
+                    "email": email,
+                    "contact": mobile
+                },
+                "theme": {
+                    "color": "#007bff"
+                }
+            };
+
+            // Open Razorpay checkout
+            var rzp1 = new Razorpay(options);
+            rzp1.open();
+        });
+    </script>
+
+
+
+
+    <?php include 'footer.php'; ?>
