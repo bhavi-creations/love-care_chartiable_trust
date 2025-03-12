@@ -29,9 +29,11 @@ p{
 
 }
 
+
 a {
     color: #4a4c70;
     transition: .3s;
+    color: #4a4c70;
 }
 
 a:hover,
