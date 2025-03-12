@@ -896,7 +896,7 @@
                     <p class="help-block text-danger"></p>
                 </div>
                 <div>
-                    <button class="btn btn-custom" type="submit" id="sendMessageButton">Send Message</button>
+                    <button class="btn btn-custom" type="submit" id="sendMessageButton">Send Message.</button>
                 </div>
             </form>
         </div>
